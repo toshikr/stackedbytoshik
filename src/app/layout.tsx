@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import "../styles/globals.css";
 import type { Metadata } from "next";
 
@@ -14,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-white px-8 lg:px-16">{children}</body>
+      <body>
+        <div className="h-screen overflow-y-scroll scrollbar-hide px-8 lg:px-16 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Toshik Rathore — Portfolio Website
 
-## Getting Started
+This is a personal portfolio website built using **Next.js (App Router)**, designed to be fast, scalable, and modern. It highlights my work, skills, and journey as a developer, while maintaining high performance, responsiveness, and clean code architecture.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+Built entirely with **Next.js**, styled using **Tailwind CSS**, animated with **Framer Motion**, and deployed on **Vercel**. It uses modern development practices including utility-first CSS, declarative animations, and optimized font loading with `@next/font`. All tools and services used are free and production-ready.
+
+## 📁 Pages & Structure
+
+The project includes the following primary pages:
+- **Home** – A quick intro with CTA
+- **About** – My journey, stack, and resume
+- **Projects** – Featured projects with tech tags and links
+- **Contact** – Social links and (form support coming soon)
+
+Additional features include dark mode support and horizontal infinite scrolling in certain UI sections.
+
+## 🛠 Development Setup
+
+To run the project locally:
 
 ```bash
-npm run dev
-# or
+# Install dependencies
+yarn install
+
+# Run dev server
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit http://localhost:3000 to view it locally. The site supports hot reload via Next.js.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔧 Tooling & Dev Experience
+Code quality is maintained using Prettier, ESLint, and Husky for pre-commit hooks. The codebase is modular, component-driven, and uses modern linting and formatting standards. Folder structure is intuitive and clean for long-term maintainability.
 
-## Learn More
+🌍 Deployment
+This site is deployed on Vercel, taking advantage of Next.js-native optimizations including SSR, static generation, and image optimization.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 Live Site
+Visit Portfolio →

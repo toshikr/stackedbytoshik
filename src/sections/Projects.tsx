@@ -9,20 +9,17 @@ const projects = [
     techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
     description:
       "A personal portfolio showcasing my work, skills, and contact in a smooth, terminal-inspired design.",
+    githubUrl: "https://github.com/toshikr/stacked",
+    liveUrl: "https://stacked.toshik.dev",
   },
   {
-    title: "Nysaa Ecomm",
-    imageSrc: "/images/nysaa-preview.png",
-    techStack: ["Next.js", "Firebase", "Zustand"],
+    title: "Rick & Morty Universe",
+    imageSrc: "/images/rickmorty-preview.png",
+    techStack: ["React.js", "Axios", "Styled Components", "AWS EC2"],
     description:
-      "A scalable ecommerce app built with modern web technologies and seamless user experience.",
-  },
-  {
-    title: "GrowthIQ Dashboard",
-    imageSrc: "/images/growthiq-preview.png",
-    techStack: ["React", "Chart.js", "Tailwind CSS"],
-    description:
-      "An analytics dashboard to visualize growth and performance metrics for SaaS products.",
+      "A dynamic web app exploring Rick & Morty characters and episodes using open APIs, with filters, debounce search, reusable atomic components, and live deployment on AWS EC2.",
+    githubUrl: "https://github.com/toshikr/rick-and-morty-universe",
+    liveUrl: "http://ec2-123-456-789.compute.amazonaws.com:3000",
   },
 ];
 
@@ -33,10 +30,16 @@ const Projects = () => {
       className="py-20 px-4 md:px-10 bg-zinc-950 text-white"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">Projects</h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Projects
+        </h2>
+        <div className="space-y-20">
           {projects.map((project, idx) => (
-            <ProjectCard key={idx} {...project} />
+            <ProjectCard
+              key={idx}
+              {...project}
+              direction={idx % 2 === 1 ? "right" : "left"}
+            />
           ))}
         </div>
       </div>
