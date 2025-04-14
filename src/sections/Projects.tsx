@@ -5,7 +5,7 @@ import ProjectCard from "@/components/projects/ProjectCard";
 const projects = [
   {
     title: "Stacked",
-    imageSrc: "/images/stacked-preview.png",
+    imageSrc: "/projects/stacked-preview.avif",
     techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
     description:
       "A personal portfolio showcasing my work, skills, and contact in a smooth, terminal-inspired design.",
@@ -14,7 +14,7 @@ const projects = [
   },
   {
     title: "Rick & Morty Universe",
-    imageSrc: "/images/rickmorty-preview.png",
+    imageSrc: "/projects/rick-and-morty-preview.avif",
     techStack: ["React.js", "Axios", "Styled Components", "AWS EC2"],
     description:
       "A dynamic web app exploring Rick & Morty characters and episodes using open APIs, with filters, debounce search, reusable atomic components, and live deployment on AWS EC2.",
