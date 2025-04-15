@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const StackIntro = () => {
   return (
-    <section className="flex justify-center px-4 pt-32 pb-12">
+    <section className="flex justify-center px-4 pt-12 md:pt-32 pb-0 md:pb-12">
       <div className="w-full max-w-3xl bg-[#0d0d0d] text-green-400 font-mono text-sm p-6 rounded-lg shadow-md overflow-x-auto">
         {/* WHOAMI */}
         <div className="mb-4">
@@ -18,8 +18,9 @@ const StackIntro = () => {
             <span className="text-green-500">$</span> tech stack
           </p>
           <p className="ml-4">
-            Next.js • TypeScript • Tailwind • Firebase • React • Redux • GraphQL
-            • AWS • Webpack • TensorFlow
+            Next.js • TypeScript • JavaScript • Tailwind • Firebase • React •
+            React-Native • Redux • GraphQL • Webpack • Parcel • Babel • AWS •
+            TensorFlow • OpenCV • NumPy..
           </p>
         </div>
 
@@ -34,14 +35,13 @@ const StackIntro = () => {
             <em className="italic text-green-300">feel fast</em>.
           </p>
           <p className="ml-4 mt-2">
-            Want to know more about my skills, experience, and projects?
-            <br />
-            Check out my full
+            Want to know more about my skills, experiences and projects? Check
+            out the extended{" "}
             <Link
               href="/about"
-              className="inline-block m-2 px-2 py-[1px] bg-green-100 text-black font-mono rounded-full hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-300"
+              className="underline hover:text-green-200 transition-colors"
             >
-              About Page
+              README.md
             </Link>
           </p>
         </div>

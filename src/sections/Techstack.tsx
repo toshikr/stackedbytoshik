@@ -30,7 +30,10 @@ const chunkedStacks: Tech[][] = techstacks.reduce<Tech[][]>(
 
 const Techstack = () => {
   return (
-    <section id="techstack" className="py-20 px-4 md:px-10 text-black">
+    <section
+      id="techstack"
+      className=" py-8 md:py-20 px-4 md:px-10  text-black"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold p-8 text-center">
           Tech Stack
@@ -38,7 +41,15 @@ const Techstack = () => {
 
         <div className="flex overflow-x-auto relative scrollbar-hide">
           <div className="flex gap-6 animate-scroll-x py-12">
-            {[...chunkedStacks, ...chunkedStacks].map((pair, idx) => (
+            {[
+              ...chunkedStacks,
+              ...chunkedStacks,
+              ...chunkedStacks,
+              ...chunkedStacks,
+              ...chunkedStacks,
+              ...chunkedStacks,
+              ...chunkedStacks,
+            ].map((pair, idx) => (
               <div key={idx} className="flex flex-col gap-12 min-w-[280px]">
                 {pair.map((tech, i) => (
                   <div

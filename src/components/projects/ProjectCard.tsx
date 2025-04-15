@@ -32,17 +32,19 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <motion.div
       className={`flex flex-col-reverse lg:flex-row ${
         direction === "right" ? "lg:flex-row-reverse" : ""
-      } items-center gap-10`}
+      } items-center gap-8 md:gap-12 lg:gap-20`}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
       variants={fadeInUp}
     >
       {/* Text */}
-      <div className="lg:w-1/2 space-y-4">
-        <h3 className="text-2xl font-semibold text-white">{title}</h3>
-        <p className="text-sm text-zinc-400">{description}</p>
-        <div className="flex flex-wrap gap-2">
+      <div className="w-full lg:w-1/2 space-y-4 text-center lg:text-left">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white">
+          {title}
+        </h3>
+        <p className="text-sm sm:text-base text-zinc-400">{description}</p>
+        <div className="flex flex-wrap justify-center lg:justify-start gap-2">
           {techStack.map((tech, idx) => (
             <span
               key={idx}
@@ -55,8 +57,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </div>
 
       {/* Image with Hover Actions */}
-      <div className="lg:w-1/2 group relative rounded-xl overflow-hidden border border-zinc-700 shadow-md">
-        <div className="relative w-full h-60 lg:h-72">
+      <div className="w-full lg:w-1/2 group relative rounded-xl overflow-hidden border border-zinc-700 shadow-md">
+        <div className="relative w-full h-56 sm:h-64 md:h-72">
           <Image
             src={imageSrc}
             alt={title}
@@ -67,7 +69,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
 
         {(githubUrl || liveUrl) && (
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center gap-4 pb-4">
+          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-wrap items-end justify-center gap-2 sm:gap-4 pb-4 px-4 text-center">
             {githubUrl && (
               <a
                 href={githubUrl}
