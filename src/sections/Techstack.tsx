@@ -15,7 +15,9 @@ const techstacks: Tech[] = [
   { name: "HTML5", logo: "/logos/html5.svg" },
   { name: "CSS3", logo: "/logos/css3.svg" },
   { name: "Firebase", logo: "/logos/firebase.svg" },
+  { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
   { name: "Redux-Toolkit", logo: "/logos/redux.svg" },
+  { name: "Python", logo: "/logos/python.svg" },
   { name: "Git", logo: "/logos/git.svg" },
   { name: "AWS", logo: "/logos/aws.svg" },
 ];

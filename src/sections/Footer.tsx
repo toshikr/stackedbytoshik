@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-20 px-8 py-6 bg-[#0e0e0e] text-sm text-gray-300 font-mono">
       <div className="max-w-6xl mx-auto flex justify-between items-center flex-col gap-8 md:gap-0 md:flex-row md:space-x-44">
-        {/* Icons on the left */}
+        {/* Socials */}
         <div className="flex gap-6 pl-0 md:pl-8">
           <Link
             href="https://github.com/toshikr"
@@ -35,7 +35,7 @@ const Footer = () => {
               />
             </div>
           </Link>
-          <Link href="mailto:toshik.rathore@gmail.com">
+          <Link href="mailto:tkkr1221@gmail.com">
             <div className="w-6 h-6 invert">
               <Image
                 src="/icons/email.svg"
@@ -47,7 +47,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        {/* write-up on the right */}
+        {/* write-up */}
         <p className="text-left leading-relaxed max-w-xl text-gray-400">
           Loosely designed in{" "}
           <span className="text-purple-400 font-semibold">Figma</span> and coded

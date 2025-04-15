@@ -21,7 +21,7 @@ const About = () => {
 
     `Beyond the UI layer, I bring a strong foundation in data-intensive and AI-driven applications. In earlier phases of my journey, I developed projects in machine learning and deep learning — architecting neural networks and image recognition systems using TensorFlow, OpenCV, NumPy, and Pandas.`,
 
-    `When I’m not optimizing render trees or refining interaction models, you’ll find me decoding RFCs, tracking emerging frontend primitives, or deep-diving through Product Hunt and engineering blogs on Dev forums to stay at the edge of tech evolution.`,
+    `When I’m not optimizing render trees or refining interaction models, you’ll find me decoding RFCs, tracking emerging frontend primitives, or deep-diving through Product Hunt and engineering blogs on dev forums to stay at the edge of tech evolution.`,
   ];
 
   return (

@@ -16,7 +16,7 @@ const projects = [
     ],
     description:
       "A personal portfolio showcasing my work, skills, and contact in a smooth, terminal-inspired design.",
-    githubUrl: "https://github.com/toshikr/stacked",
+    githubUrl: "https://github.com/toshikr/stackedbytoshik",
     liveUrl: "https://stacked.toshik.dev",
   },
   {

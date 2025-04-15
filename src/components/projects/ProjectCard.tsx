@@ -56,7 +56,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
       </div>
 
-      {/* Image with Hover Actions */}
+      {/* Project Image */}
       <div className="w-full lg:w-1/2 group relative rounded-xl overflow-hidden border border-zinc-700 shadow-md">
         <div className="relative w-full h-56 sm:h-64 md:h-72">
           <Image
@@ -69,7 +69,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
 
         {(githubUrl || liveUrl) && (
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-wrap items-end justify-center gap-2 sm:gap-4 pb-4 px-4 text-center">
+          <div className="absolute inset-0 bg-black/60 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex flex-wrap items-end justify-center gap-2 sm:gap-4 pb-4 px-4 text-center">
             {githubUrl && (
               <a
                 href={githubUrl}
