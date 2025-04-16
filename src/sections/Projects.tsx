@@ -8,10 +8,9 @@ const projects = [
     imageSrc: "/projects/stacked-preview.avif",
     techStack: [
       "Next.js",
-      "Tailwind CSS",
       "TypeScript",
+      "Tailwind CSS",
       "Framer Motion",
-      "Redux-toolkit",
       "Vercel",
     ],
     description:
@@ -28,13 +27,37 @@ const projects = [
     githubUrl: "https://github.com/toshikr/rick-and-morty-universe",
     liveUrl: "http://ec2-123-456-789.compute.amazonaws.com:3000",
   },
+  {
+    title: "Face Mask Detection",
+    imageSrc: "/projects/face-mask-preview.avif",
+    techStack: ["Python", "OpenCV", "Keras", "MobileNetV2", "TensorFlow"],
+    description:
+      "Face mask detection system using deep learning and computer vision to identify masks in static images and real-time video streams.",
+    githubUrl: "",
+    liveUrl: "",
+  },
+  {
+    title: "Bayes & Beyond",
+    imageSrc: "/projects/bbc-classification-preview.avif",
+    techStack: [
+      "NLP",
+      "Naïve Bayes",
+      "Logistic Regression",
+      "SVM",
+      "Random Forest",
+    ],
+    description:
+      "Classified news articles into categories. Compared performance of various algorithms like Naïve Bayes, SVM, Decision Tree, and Logistic Regression.",
+    githubUrl: "",
+    liveUrl: "",
+  },
 ];
 
 const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 px-4 md:px-10 bg-zinc-950 text-white scroll-mt-20"
+      className="py-16 px-4 md:px-10 bg-zinc-950 text-white scroll-mt-20"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">

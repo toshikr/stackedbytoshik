@@ -27,9 +27,19 @@ const Navbar = () => {
           <Link href="/about" className="hover:text-green-600">
             About
           </Link>
-          <a href="#projects" className="hover:text-green-600">
+          <a
+            href="#projects"
+            className="hover:text-green-600"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Projects
           </a>
+
           <ContactPopover />
         </div>
       </div>
@@ -40,9 +50,19 @@ const Navbar = () => {
           <Link href="/about" className="hover:text-green-600">
             About
           </Link>
-          <a href="#projects" className="hover:text-green-600">
+          <a
+            href="#projects"
+            className="hover:text-green-600"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Projects
           </a>
+
           <ContactPopover />
         </div>
       )}
