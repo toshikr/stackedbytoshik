@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 type Tech = {
   name: string;
@@ -60,10 +61,12 @@ const Techstack = () => {
                       i === 1 ? "translate-x-36" : ""
                     }`}
                   >
-                    <img
+                    <Image
                       src={tech.logo}
                       alt={tech.name}
-                      className="w-24 h-24 object-contain hover:scale-150 transition-transform"
+                      width={96}
+                      height={96}
+                      className="hover:scale-150 transition-transform object-contain w-24 h-24"
                     />
                     <div className="absolute bottom-full mb-2 hidden group-hover:block bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap z-10">
                       {tech.name}
