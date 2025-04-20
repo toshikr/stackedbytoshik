@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const StackIntro = () => {
   return (
-    <section className="flex justify-center px-4 pt-12 md:pt-32 pb-0 md:pb-2">
+    <section className="flex justify-center px-4 pt-4 md:pt-16 pb-0 md:pb-2">
       <div className="w-full max-w-3xl bg-[#0d0d0d] text-green-400 font-mono text-sm p-6 rounded-lg shadow-md overflow-x-auto">
         {/* WHOAMI */}
         <div className="mb-4">

@@ -14,6 +14,34 @@
 }
 
 
+/* background gradient animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient-bg {
+    background: linear-gradient(-45deg, #b984f2, #8d6aae, #2b86c5, #ffe985);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+}
+
+
+.animated-gradient-buttons-bg {
+    background: linear-gradient(-45deg, #e0caf8, #f7eeff, #9cd6ff, #f7e8a5);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+}
+
 
 @keyframes scroll-x {
     0% {

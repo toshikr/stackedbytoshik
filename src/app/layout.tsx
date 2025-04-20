@@ -4,6 +4,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stacked by Toshik",
   description: "Showcasing cool builds",
+  icons: {
+    icon: "/fav-icon.jpg",
+    apple: "/fav-icon.jpg", //apple-touch-icon
+    shortcut: "/fav-icon.jpg",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -14,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="h-screen overflow-y-scroll scrollbar-hide px-2 lg:px-16 bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
+        <div className="animated-gradient-bg h-screen overflow-y-scroll scrollbar-hide px-2 lg:px-16 text-black dark:text-white transition-colors duration-300">
           {children}
         </div>
       </body>
