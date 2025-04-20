@@ -43,12 +43,12 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <h3 className="text-xl sm:text-2xl font-semibold text-white">
           {title}
         </h3>
-        <p className="text-sm sm:text-base text-zinc-400">{description}</p>
-        <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+        <p className="text-sm sm:text-base">{description}</p>
+        <div className="flex flex-wrap justify-start lg:justify-start gap-2">
           {techStack.map((tech, idx) => (
             <span
               key={idx}
-              className="bg-zinc-800 text-zinc-300 text-xs px-2 py-1 rounded"
+              className="text-white bg-white/10 border border-white/20 backdrop-blur-md text-xs px-2 py-1 rounded"
             >
               {tech}
             </span>

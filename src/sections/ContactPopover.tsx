@@ -31,7 +31,7 @@ const ContactPopover = () => {
       <button
         ref={buttonRef}
         onClick={() => setIsOpen((prev) => !prev)}
-        className="bg-white text-gray-800 hover:text-green-600 transition cursor-pointer"
+        className="text-gray-800 hover:text-green-600 transition cursor-pointer"
       >
         Contact
       </button>
@@ -64,19 +64,6 @@ const ContactPopover = () => {
             {/* Socials */}
             <div className="flex gap-5 mb-3">
               <Link
-                href="mailto:tkkr1221@gmail.com"
-                target="_blank"
-                aria-label="Email"
-              >
-                <Image
-                  src="/icons/email.svg"
-                  alt="Email"
-                  width={22}
-                  height={22}
-                  className="invert hover:opacity-70 transition"
-                />
-              </Link>
-              <Link
                 href="https://github.com/toshikr"
                 target="_blank"
                 aria-label="GitHub"
@@ -95,8 +82,21 @@ const ContactPopover = () => {
                 aria-label="LinkedIn"
               >
                 <Image
-                  src="/icons/linkedin.svg"
+                  src="/icons/linked.svg"
                   alt="LinkedIn"
+                  width={22}
+                  height={22}
+                  className="invert hover:opacity-70 transition"
+                />
+              </Link>
+              <Link
+                href="mailto:tkkr1221@gmail.com"
+                target="_blank"
+                aria-label="Email"
+              >
+                <Image
+                  src="/icons/email.svg"
+                  alt="Email"
                   width={22}
                   height={22}
                   className="invert hover:opacity-70 transition"

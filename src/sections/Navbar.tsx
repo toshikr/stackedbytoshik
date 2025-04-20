@@ -9,10 +9,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full px-6 py-4 bg-white">
+    <nav className="w-full px-6 py-12">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left side - Logo */}
-        <h1 className="text-xl font-semibold text-black">stackedbytoshik</h1>
+        <Link href={"/"} className="text-xl font-semibold text-black">
+          stackedbytoshik
+        </Link>
 
         {/* Hamburger */}
         <button

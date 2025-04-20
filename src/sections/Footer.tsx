@@ -28,7 +28,7 @@ const Footer = () => {
           >
             <div className="w-6 h-6 invert">
               <Image
-                src="/icons/linkedin.svg"
+                src="/icons/linked.svg"
                 alt="LinkedIn"
                 width={24}
                 height={24}
